@@ -27,9 +27,12 @@ main() async {
   });
 
   test('Retorna um Episódio', () async {
-    final detail = await repository.getEpisodeById(40);
-
+    final apiModel = await repository.fetchLists(url);
+    final id = apiModel.results.first.id;
+    final detail = await repository.getEpisodeById(id);
     expect(detail.name.isNotEmpty, true);
-    expect(detail.name, equals('Childrick of Mort'));
+    expect(detail.airDate.isNotEmpty, true);
+    expect(detail.episode.isNotEmpty, true);
+    expect(detail.id, equals(id));
   });
 }
