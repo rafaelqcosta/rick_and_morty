@@ -2,7 +2,7 @@
 
 A new Flutter project. Challenge to participate in a selection process of the company NeoTech. App developed in less than 5 hours, consuming an endpoint
 
-![This is an image](rickandmorty.gif)
+![This is an image](richandmorty.gif)
 
 # Para rodar a aplicação localmente
 instale as dependências
